@@ -23,8 +23,8 @@ public class SeguimientoCamara : MonoBehaviour
 
         Vector3 targetPosition = new Vector3(boxPosition.position.x, boxPosition.position.y + 2f, transform.position.z);
 
-        
-        transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref, camVelocity, smoothVelocity);
+
+        transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref camVelocity, smoothVelocity);
         
     }
 }
